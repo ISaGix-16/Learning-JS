@@ -1,4 +1,4 @@
-let score = "49" // if "49abs" it's typeof will give NaN
+/* let score = "49" // if "49abs" it's typeof will give NaN
 
 console.log(typeof score);
 console.log(typeof(score));
@@ -19,4 +19,10 @@ console.log(booleanIsLoggedIn);
 // "xyz" => true
 
 let someNumber = 99
-let stringNumber = String(someNumber)
+let stringNumber = String(someNumber) */
+
+// ******* Operations ********
+
+let value = 3
+let negValue = -value
+console.log(negValue);
