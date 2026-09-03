@@ -1,4 +1,4 @@
-// Primitive 
+/* // Primitive 
 
 // 7 types : String, Number, Boolean, null, Undefined, Symbol, bigint
 
@@ -27,6 +27,28 @@ const myFunc = function(){
     console.log("Hello World");
 }
 
-console.log(typeof bigNumber);
+console.log(typeof bigNumber); */
 
+// *******************************************************8
 
+// Stack Memory (primitive) and heap (Non - Primitive)
+
+let myYoutubeName = "BiLLu-BaDMoSs"
+
+let anotheName = myYoutubeName
+anotheName = "Isagi Yoichi"
+
+/* console.log(anotheName);
+console.log(myYoutubeName); */ 
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl", 
+}
+
+let usertwo = userOne
+
+usertwo.email = "billu@google.com" // value will change in both
+
+console.log(userOne.email);
+console.log(usertwo.email);
