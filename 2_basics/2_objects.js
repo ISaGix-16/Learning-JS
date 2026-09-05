@@ -94,5 +94,31 @@ console.log(Object.keys(tinderUser)); // array of kleys
 console.log(Object.values(tinderUser)); // array of all valuer
 console.log(Object.entries(tinderUser)); */ // array with arrays of key and value
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); // for checking the property exists or not
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); // for checking the property exists or not
 
+
+// ******************* De-Structuring *********************
+
+const course  = {
+    coursename: "JavaScript",
+    price: "999",
+    courseInstructor: "Harry"
+} 
+
+// course.courseInstructor
+
+// const {courseInstructor} = course // OR
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor); // both will return same value
+// console.log(instructor); 
+
+
+// ****************** API Intro ******************
+
+// JSON -> works in .json file or in API calls
+// { 
+//     "name": "Hitesh",
+//     "courseName": "JavaScript",
+//     "price": "free"
+// }
