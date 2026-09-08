@@ -1,0 +1,14 @@
+DOM - Document Object Model
+
+Difference b/w innerText and textContent
+
+this is code line -> 
+<h1 id="title" class="heading">Dom Learning with Chai or Code <span style="display: none;">test text</span></h1>
+
+innerText -> Dom Learning with Chai or Code
+textContent -> Dom Learning with Chai or Code test text
+innerHTML -> Dom Learning with Chai or Code <span style="display: none;">test text</span>
+
+
+nodeList and htmlList are not pure array
+
