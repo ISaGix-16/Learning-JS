@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing Images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="yuta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2z-o6QoV2SfozUHMhRYi0q8HYAKEs4su8zMySbThOfQ&s=10" alt="Yuta Okkotsu"></li>
+            <li><img width="200px" id="bmw" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbZNUNUWiAj1SwOjuM5CRa9mAK2BK-rghI8XEsP_z1cA&s=10" alt="BMW M4"></li>
+            <li><img width="200px" id="itachi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVk77vjTTVjaR6hnnD67X1MMtSnXChg_-fOk7B3CwDcw&s=10" alt="Itachi Uchiha"></li>
+            <li><img width="200px" id="nagi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4JTm6irgjOBPyqudpWkNpqnYMlrWgyZh7JIQW_jpjog&s=10" alt="Nagi Seishiro"></li>
+            <li><img width="200px" id="spidy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPPboBjt_nT0e-v-U_69FmDN4Zd7EJ68CXo0W9pqq5hg&s" alt="Spider Man"></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+
+<script>
+    // document.getElementById('bmw').onclick = function(){
+    //     alert("BMW hai ladle.")
+    // } this is goog but gives less features
+    
+    // attachEvent()-> used in past
+    // jQuery - on
+
+    /* document.getElementById('bmw').addEventListener('click', function(e){
+        // alert("BMW hai ladle")
+        console.log(e);
+    }, false) */ 
+
+    // false is default
+    // type, timestamp, preventDefault, target, toElement, srcElement
+    // currentTarget
+    // clientX, clentY, screenX, screenY
+    // altKey, ctrlKey, shiftKey, keyCode
+
+    // false -> event bubling and true -> event capturing 
+    // Default is false (in most casees ew use false)
+
+    /* document.getElementById('images').addEventListener('click', function(e){
+        console.log("ul me kahi to click kiya h");
+    }, false)
+    document.getElementById('bmw').addEventListener('click', function(e){
+        console.log("bmw h vo");
+    }, false)
+
+    document.getElementById('google').addEventListener('click', function(e){
+        e.preventDefault()
+        e.stopPropagation() 
+        console.log("Google clicked")
+    }, false) */
+
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode
+        if(e.target.tagName === 'IMG')
+            removeIt.remove()
+        // removeIt.parentNode.removeChild(removeIt)
+    }, false)
+
+</script>
+
+</html>
