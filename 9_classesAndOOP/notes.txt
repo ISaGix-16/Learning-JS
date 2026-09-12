@@ -1,0 +1,28 @@
+=> JavaScript and Classes
+
+** OOP **
+-> programing paradime
+-> structure for writing code
+
+** Object ** 
+-> Collection of properties and methods
+i.e toLowerCase, 
+
+-> Why use OOP
+-
+ 
+** parrts of OOP ** 
+-> Object literal
+
+-> constructor function
+> ie. new
+
+-> prototypes
+-> Classes
+-> Instances (new, this)
+
+** 4 pillars **
+-> Abstraction - hide details
+-> Encapsulation - wrap data 
+-> Inheritance - (will learn in prototypes video)
+-> Polymorphism - one method do many works
