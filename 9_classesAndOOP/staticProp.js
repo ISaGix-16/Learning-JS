@@ -15,7 +15,7 @@ class User {
 // static -> stop for accessing that property
 
 const isagi = new User("Isagi")
-// console.log(isagi.createId()) // will givce error due to static
+// console.log(isagi.createId()) // will give error due to static
 
 class Teacher extends User {
     constructor(username, email) {
@@ -24,5 +24,5 @@ class Teacher extends User {
     }
 }
 
-const ego  = new Teacher("Ego", "ego@bluelock.com")
-console.log(ego.createId())
+const ego  = new Teacher("Ego", "ego@b luelock.com")
+console.log(ego.createId()) // this will also give an error 
